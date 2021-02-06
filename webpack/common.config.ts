@@ -5,10 +5,6 @@ import CopyPlugin from 'copy-webpack-plugin';
 
 const config: webpack.Configuration = {
 
-    output: {
-        // HACK. This is needed since github pages can only be read from docs folder
-        path: path.resolve(__dirname, '..', 'docs'),
-    },
     entry: path.resolve(__dirname, '..', 'src'),
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx']
