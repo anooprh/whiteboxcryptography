@@ -8,6 +8,9 @@ import {default as commonConfig} from './common.config';
 const config: webpack.Configuration = merge(commonConfig, {
     mode: "production",
     devtool: false,
+    output: {
+        publicPath: '/whiteboxcryptography/'
+    },
     optimization: {
         minimize: true,
         minimizer: [new TerserPlugin()],

@@ -8,7 +8,10 @@ const config: webpack.Configuration = merge(commonConfig, {
     optimization: {
         minimize: false
     },
-    devtool: "inline-source-map"
+    devtool: "inline-source-map",
+    devServer: {
+        historyApiFallback: true,
+    }
 });
 
 export default config;

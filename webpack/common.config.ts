@@ -6,6 +6,11 @@ import CopyPlugin from 'copy-webpack-plugin';
 const config: webpack.Configuration = {
 
     entry: path.resolve(__dirname, '..', 'src'),
+    output: {
+        path: path.resolve(__dirname, '..', 'dist'),
+        filename: 'bundle.js',
+        publicPath: '/'
+    },    
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx']
     },
@@ -38,8 +43,8 @@ const config: webpack.Configuration = {
                 ]
             },
             {
-                test:/\.(png|jpe?g|gif)$/i,
-                loader:'file-loader',
+                test: /\.(png|jpe?g|gif)$/i,
+                loader: 'file-loader',
             }
 
         ]
