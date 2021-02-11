@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --mode production --config webpack/prod.config.ts",
     "start": "webpack-dev-server --open --config webpack/dev.config.ts",
-    "test": "jest"
+    "test": "jest",
+    "prettier": "prettier --write ."
   },
   "author": "Anoop Hallur<anoophallur@gmail.com>",
   "devDependencies": {
@@ -38,6 +39,7 @@
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "jest": "^26.1.0",
+    "prettier": "^2.2.1",
     "source-map-loader": "^1.0.1",
     "style-loader": "^1.2.1",
     "terser-webpack-plugin": "^3.0.7",

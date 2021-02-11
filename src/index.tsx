@@ -2,13 +2,13 @@ import * as React from "react";
 import { render } from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import { App } from "./App";
 
 render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>,
-    document.getElementById("root")
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
 );
